@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 0px 6px 0px hsl(234deg, 12%, 34%);
+  height: 15rem;
+  width: 23rem;
+}
+.card h1 {
+  color: hsl(234deg, 12%, 34%);
+}
+.card p {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.card .image {
+  text-align: right;
+}
+@media screen and (max-width: 1180px) {
+  .card {
+    width: 20rem;
+    height: 14rem;
+  }
+}/*# sourceMappingURL=Card.css.map */

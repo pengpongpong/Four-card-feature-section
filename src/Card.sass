@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap')
+
+$poppins: 'Poppins', sans-serif
+
+$dark_blue: hsl(234, 12%, 34%)
+$gray_blue: hsl(229, 6%, 66%)
+
+$mobile: 1180px
+
+.card
+    background-color: white
+    border-radius: 5px
+    padding: 1rem 1.5rem
+    box-shadow: 0px 0px 6px 0px $dark_blue
+    height: 15rem
+    width: 23rem
+    h1
+        color: $dark_blue
+    p
+        color: $gray_blue
+        font-size: .8rem
+        margin-bottom: 2rem
+    .image
+        text-align: right
+    @media screen and ( max-width: $mobile )
+        width: 20rem
+        height: 14rem
+        

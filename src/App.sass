@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap')
+
+$red: hsl(0, 78%, 62%)
+$cyan: hsl(180, 62%, 55%)
+$orange: hsl(34, 97%, 64%)
+$blue: hsl(212, 86%, 64%)
+
+$dark_blue: hsl(234, 12%, 34%)
+$gray_blue: hsl(229, 6%, 66%)
+$light_gray: hsl(0, 0%, 98%)
+
+$poppins: 'Poppins', sans-serif
+
+$mobile: 1180px
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    min-height: 100vh
+    display: grid
+    place-content: center
+    background-color: $light_gray
+    font-family: $poppins
+
+main
+    margin: auto 10rem
+    @media screen and ( max-width: $mobile )
+        margin: auto 2rem
+
+.introduction
+    text-align: center
+    width: 30rem
+    margin: 0 auto
+    padding-bottom: 2rem
+    h1
+        &:nth-child(1)
+            color: $gray_blue
+            font-weight: 100
+        &:nth-child(2)
+            color: $dark_blue
+            margin-bottom: 1rem
+    p
+        color: $gray_blue
+        margin-bottom: 3rem
+        font-size: .95rem
+    @media screen and ( max-width: $mobile )
+        width: 97%
+        max-width: 30rem
+        padding-bottom: 0
+        margin: 4rem auto
+
+.service_overview
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 2rem
+    .middle
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        gap: 2rem
+    @media screen and ( max-width: $mobile )
+        flex-direction: column
+
+footer
+    text-align: center
+    margin: 2rem
